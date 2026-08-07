@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="site-header">
+        <div class="container">
             <h1>PW3- Projeto Laravel</h1>
 
             <nav>
