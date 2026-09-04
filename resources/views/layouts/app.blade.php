@@ -18,7 +18,7 @@
     </div>
 </header>
 
-    <main>
+    <main class="container mcx-auto my-8 px-4">
         @yield('content')
     </main>
 
