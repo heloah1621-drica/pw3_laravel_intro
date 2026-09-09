@@ -10,7 +10,8 @@ Route::get('/', function () {
 });
 
 Route::view('/landing', 'landing');
-Route::view('/admin', 'admin.dashboard');
+
+Route::get('/admin',[ UseController::class,'index']);
 
 // Rota para enviar formilário (GET)
 Route::get('/usuarios/novo',[UseController::class,'create']);
