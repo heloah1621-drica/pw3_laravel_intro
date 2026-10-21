@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\LivroController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CantinaController;
 
 Route::get('/', function () {
     return view('home');
@@ -29,3 +30,6 @@ Route::put('/usuarios/{id}', [UserController::class, 'update']);
 
 // Rota de exclusão (DELETE)
 Route::delete('/usuarios/{id}', [UserController::class, 'destroy']);
+
+//Registra todas as rotas do CRUD em uma única linha
+Route::resource('cantinas',CantinaController::class);   
